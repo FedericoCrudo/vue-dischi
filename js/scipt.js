@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
       dischi:[],
-      categorie:[],
+      categorie:["all"],
       select:'all',
       search:"",
     },
