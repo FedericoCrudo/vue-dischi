@@ -6,18 +6,6 @@ var app = new Vue({
       selected:'',
       search:"",
     },
-
-    methods:{
-    //   searchContact(){
-    //         this.dischi.forEach(element => {
-    //         (!element.title.includes(this.search))? element.visibility=false : element.visibility=true;
-
-    //     });
-    //     console.log(this.dischi);
-        
-      
-    // } 
-    },
     mounted(){
       axios
         .get('https://flynn.boolean.careers/exercises/api/array/music')
