@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
       dischi:[],
       categorie:[],
-      select:'',
+      select:'all',
       search:"",
     },
     mounted(){
