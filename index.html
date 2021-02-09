@@ -19,9 +19,8 @@
         <div id="app">
             <!-- sezione tools -->
            <div class="tools">
-                <input type="text" v-model="search" @keyup="searchContact()" placeholder="Cerca...">
+          
                 <select v-model="select">
-                    
                     <option v-for="(categoria in categorie" :value="categoria" >{{categoria}}</option>
                 </select>
              
