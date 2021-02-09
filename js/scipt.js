@@ -12,7 +12,7 @@ var app = new Vue({
         .then((result) => {
            this.dischi = result.data.response;
            console.log(this.dischi);
-           //filtriamo le categorie
+           //filtriamo le categorie 
             this.dischi.forEach(element => {
                 if(!this.categorie.includes(element.genre)){
                     this.categorie.push(element.genre);
