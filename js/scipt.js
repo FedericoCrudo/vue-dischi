@@ -29,7 +29,7 @@ var app = new Vue({
                     this.categorie.push(element.genre);
                 }
             });
-           
+         
             
         })
         .catch(error => console.log('errore'));
