@@ -19,20 +19,15 @@
         <div id="app">
            <div class="tools">
                 <input type="text" v-model="search" @keyup="searchContact()" placeholder="Cerca...">
-                <select v-model="selected">
+                <select v-model="select">
+                    <option   value="all" selected>All</option>
                     <option v-for="(categoria in categorie" :value="categoria" >{{categoria}}</option>
                 </select>
              
            </div> 
             <div class="cds-container container">
             <!-- Disco ad esempio -->
-                <div v-for="disco in dischi" v-if="selected=='all'||selected==''"   class="cd">  
-                    <img :src="disco.poster" alt="">
-                    <h3>{{disco.title}}</h3>
-                    <span class="author">{{disco.author}}</span>
-                    <span class="year">{{disco.year}}</span>
-                </div>
-                <div v-for="disco in dischi" v-if="disco.genre==selected"  class="cd">  
+                <div v-for="disco in dischi" v-for="disco in dischi" v-if="select=='all'|| disco.genre == select"   class="cd">  
                     <img :src="disco.poster" alt="">
                     <h3>{{disco.title}}</h3>
                     <span class="author">{{disco.author}}</span>

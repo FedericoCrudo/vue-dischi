@@ -2,8 +2,8 @@ var app = new Vue({
     el: '#app',
     data: {
       dischi:[],
-      categorie:["all"],
-      selected:'',
+      categorie:[],
+      select:'',
       search:"",
     },
     mounted(){
