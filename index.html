@@ -16,16 +16,24 @@
                 <img src="logo.png" alt="logo" />
             </div>
         </header>
-
-        <div class="cds-container container">
+        <div id="app">
+           <div class="tools">
+                <input type="text" v-model="search" @keyup="searchContact()" placeholder="Cerca...">
+                <select v-model="selected">
+                    <option v-for="categoria in categorie"  value="">{{categoria}}</option>
+                </select>
+           </div> 
+            <div class="cds-container container">
             <!-- Disco ad esempio -->
-            <div v-for="disco in dischi" class="cd">
-                <img :src="disco.poster" alt="">
-                <h3>{{disco.title}}</h3>
-                <span class="author">{{disco.author}}</span>
-                <span class="year">{{disco.year}}</span>
+                <div v-for="disco in dischi" class="cd">
+                    <img :src="disco.poster" alt="">
+                    <h3>{{disco.title}}</h3>
+                    <span class="author">{{disco.author}}</span>
+                    <span class="year">{{disco.year}}</span>
+                </div>
             </div>
         </div>
+    
         
 
         <script src="js/scipt.js" charset="utf-8"></script>

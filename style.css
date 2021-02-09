@@ -11,7 +11,6 @@ body {
 }
 
 .container {
-    width: 1070px;
     height: 100%;
     margin: 0 auto;
 }
@@ -65,4 +64,31 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+.tools{
+    padding: 30px 10px ;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tools input{
+    outline-style: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom:2px solid grey ;
+    color: white;
+    font-size: 18px;
+}
+.tools input::placeholder{
+    font-weight: 200;
+    color: white;
+    font-size: 18px;
+}
+.tools select{
+    width: 100px;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    font-size: 15px;
 }
