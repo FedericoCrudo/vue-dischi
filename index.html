@@ -17,6 +17,7 @@
             </div>
         </header>
         <div id="app">
+            <!-- sezione tools -->
            <div class="tools">
                 <input type="text" v-model="search" @keyup="searchContact()" placeholder="Cerca...">
                 <select v-model="select">
@@ -25,6 +26,7 @@
                 </select>
              
            </div> 
+           <!-- sezione dischi -->
             <div class="cds-container container">
             <!-- Disco ad esempio -->
                 <div v-for="disco in dischi" v-for="disco in dischi" v-if="select=='all'|| disco.genre == select"   class="cd">  
